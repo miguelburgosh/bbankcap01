@@ -36,7 +36,6 @@ function Login() {
     const [disabled, setDisabled] = React.useState(true);
 
     function handleLogin() {
-      //console.log(email, password);
 
       // validate fields
       if (!validate(email, "email")) return;
@@ -57,17 +56,14 @@ function Login() {
           fetch(`/account/login/${email}/${password}`)
           .then(response => response.text())
           .then(text => {
-            //console.log(text)
             try{
               const data = JSON.parse(text);
-              //console.log(data)
               setShow(false);
               setUser(data.name);
               setLoaded(true);
               setSuccess(true);
               ctx.user = data.name;
               ctx.email = data.email;
-              //console.log('JSON:', data); 
             } catch {
               setMessage(text);
               setSuccess(false);

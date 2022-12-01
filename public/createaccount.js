@@ -30,7 +30,6 @@ function CreateAccount() {
     
 
     function handleCreate() {
-      //console.log('handle create fired');
       
       // validate field requirements are met
       if (!validate(name, "name")) return;
@@ -113,7 +112,7 @@ function CreateAccount() {
   function CreateMessage() {
     return (
       <>
-        <h5 id="status">Your account is ready, please Login.</h5>
+        <h5 id="status">Account created, please Login.</h5>
         <a href="#/login/">
           <button
             type="submit"

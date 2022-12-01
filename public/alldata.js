@@ -1,31 +1,19 @@
 function AllData() {
-  const [data, setData] = React.useState([]);
-  const[loaded, setLoaded] = React.useState(false);
+    const [data, setData] = React.useState([]);
+    const[loaded, setLoaded] = React.useState(false);
 
-  React.useEffect(() => {
-    // fetch all accounts from API
-    fetch('/account/all')
-      .then(response => response.json())
-      .then(data => {
-        //console.log(data);
-        setData(data);
-      })
-    setLoaded(true);
+    React.useEffect(() => {
 
-    // const navCreateAccount = document.getElementById('nav-create-account');
-    // const navLogin = document.getElementById('nav-login');
-    // const navDeposit = document.getElementById('nav-deposit');
-    // const navWithdraw = document.getElementById('nav-withdraw');
-    // const navBalance = document.getElementById('nav-balance');
-    // const navAllData = document.getElementById('nav-allData');
-    // const navLogout = document.getElementById('nav-logout');
-    // navCreateAccount.style.display = "none";
-    // navLogin.style.display = "none";
-    // navDeposit.style.display = "block";
-    // navWithdraw.style.display = "block";
-    // navBalance.style.display = "block";
-    // navAllData.style.display = "block";
-    // navLogout.style.display = "block";
+        // fetch all accounts from API
+        fetch('/account/all')
+          .then(response => response.json())
+          .then(data => {
+              console.log(data);
+              setData(data);
+        })
+  
+        setLoaded(true);
+
   }, [loaded]);
 
   const spinner =  <h1>Loading...</h1>;

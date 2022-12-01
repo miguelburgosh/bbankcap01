@@ -6,25 +6,7 @@ function Balance() {
   const[loaded, setLoaded] = React.useState(false);
   
   React.useEffect(() => {
-    // const navCreateAccount = document.getElementById('nav-create-account');
-    // const navLogin = document.getElementById('nav-login');
-    // const navDeposit = document.getElementById('nav-deposit');
-    // const navWithdraw = document.getElementById('nav-withdraw');
-    // const navTransfer = document.getElementById('nav-transfer');
-    // const navBalance = document.getElementById('nav-balance');
-    // const navAllData = document.getElementById('nav-allData');
-    // const navLogout = document.getElementById('nav-logout');
 
-    // navCreateAccount.style.display = "none";
-    // navLogin.style.display = "none";
-    // navDeposit.style.display = "block";
-    // navWithdraw.style.display = "block";
-    // navTransfer.style.display = "block";
-    // navBalance.style.display = "block";
-    // navAllData.style.display = "block";
-    // navLogout.style.display = "block";
-
-    //console.log(ctx);
 
     // Get Logged in user from MongoDB
     fetch(`/account/findOne/${ctx.email}`)

@@ -3,7 +3,6 @@ function Deposit() {
   const[loaded, setLoaded] = React.useState(false);
   const [show, setShow] = React.useState(true);
   const [status, setStatus] = React.useState("");
-  // const [movements, setMovements] = React.useState(ctx.users[0].movements);
   const ctx = React.useContext(UserContext);
 
   React.useEffect(() => {

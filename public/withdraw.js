@@ -3,7 +3,6 @@ function Withdraw() {
   const [show, setShow] = React.useState(true);
   const [status, setStatus] = React.useState("");
   const ctx = React.useContext(UserContext);
-  //const [movements, setMovements] = React.useState([]);
   const[loaded, setLoaded] = React.useState(false);
 
   React.useEffect(() => {
@@ -48,7 +47,6 @@ function Withdraw() {
     function handleWithdraw() {
       //validate input from user
       if (!validate(Number(withdraw), balance)) return;
-      //console.log(typeof(withdraw))
 
       // update user balance in MongoDB 
       fetch(`/account/update/${ctx.email}/-${Number(withdraw)}`)
@@ -56,12 +54,10 @@ function Withdraw() {
       .then(text => {
         try {
           const data = JSON.parse(text);
-          //props.setStatus(JSON.stringify(data.amount));
           setShow(false);
           setAmount(data.amount);
           console.log('JSON:', data);
         } catch(err) {
-          //setStatus('Withdraw failed')
           console.log('err:', text);
         }
       });
