@@ -1,0 +1,323 @@
+.header a {
+  width: fit-content;
+}
+
+.navbar-brand img {
+  width: 30%;
+  height: auto;
+}
+
+.allData-json {
+  max-width: 70%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#nav-home{
+  pointer-events: none;
+}
+
+.login-btn{
+  padding-bottom:5px;
+}
+
+.hi-msg{
+  width: 100%;
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.badge.bg-dark.rounded-pill {
+  color: white;
+  background-color: black;
+}
+
+.list-group-item.make-center {
+  text-align: center;
+  color: teal;
+  background-color: white;
+  font-size: 25px;
+}
+
+.list-group-item {
+  color: #FCA311;
+}
+
+.list-group-item.data {
+  color: #14213D;
+}
+
+.feature-coming-soon {
+  text-align: center;
+  margin-top: 250px;
+}
+
+
+
+.list-group-item.movement.deposit {
+  color: #14213D;
+  display: flex;
+  justify-content: space-between;
+}
+.list-group-item.movement.withdraw {
+  background-color: rgb(173, 107, 107);
+  display: flex;
+  justify-content: space-between;
+}
+
+.movements-list {
+  margin-bottom: 0em;
+}
+
+.left h5 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #FCA311;
+  font-size: larger;
+  font-weight: 700;
+  font-size: 78px;
+  margin-top: 250px;
+  text-shadow: 6px 6px 2px #14213D;
+}
+
+.createAccountPage {
+  display: block;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+#user-info {
+  visibility: visible; 
+  padding-bottom: 25px;
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: right !important;
+  position: absolute;
+  right: 10%;
+}
+
+.display-name {
+  text-align: right;
+  visibility: visible;
+  display:block
+}
+
+
+
+.allData-display {
+  display:flex;
+  justify-content: center;
+  align-content: space-around;
+  width: 100%;
+  
+}
+
+.allData-btn{
+  font-size: 20px !important;
+  
+}
+
+.first-btn {
+  padding-right: 10px;
+}
+
+.allData-btn-container {
+  padding-left: 10px
+}
+
+
+
+.allData-json {
+  max-width: 70%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#nav-home{
+  pointer-events: none;
+}
+
+.login-btn{
+  padding-bottom:5px;
+}
+
+.hi-msg{
+  width: 100%;
+    text-align: center;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #14213D;
+    color: #FCA311;
+}
+
+.container-app {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "left right"
+    "footer footer";
+  height: 100vh;
+  padding: 0px 80px;
+  background-color: #E5E5E5;
+}
+
+.header { grid-area: header; }
+
+.left { 
+  grid-area: left;
+  background-image: linear-gradient(
+    to right,
+    rgba(20,33,61,0.7) 0%,
+    rgba(20,33,61,0.7) 34%,
+    rgba(252,163,17,0.7) 100%
+  ),
+  url("./meeting.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.right { 
+  grid-area: right;
+  background-image: url("./chess.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.footer { 
+  grid-area: footer;
+  background-color: #FCA311;
+}
+
+
+
+.navbar {
+  background-color: #FCA311 !important;
+}
+
+.navbar a:active {
+  background-color: #14213D !important;
+  color: #FCA311;
+}
+
+.navbar-nav a:hover {
+  color: #FCA311 !important;
+  transition: 1.2s;
+}
+
+.nav-link:hover {
+  background-color: #14213D;
+  transition: 1.2s;
+}
+
+.bg-dark {
+  background-color: #FCA311 !important;
+}
+
+.active {
+  background-color: #14213D;
+  color: #FCA311 !important;
+}
+
+.brandlogo.nav-link:hover {
+  background-color: #FCA311;
+}
+
+/* Cards */
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  margin-top: 10%;
+  font-family: 'Montserrat', sans-serif;
+  width: 20rem;
+  height: 30rem;
+  color:#FCA311;
+  text-align: center;
+}
+
+.card-body {
+  background-color: #14213D;
+}
+
+.card-header {
+  color: #14213D;
+  background-color: #FCA311 !important;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.allData-cards {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.card-body .balance-information {
+  font-size: 25px;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+}
+
+.login-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* buttons */
+
+.card-body .button {
+  background-color: #FCA311 !important;
+}
+
+/* navbar */
+
+.navbar a {
+  font-size: large;
+  color: #14213D !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:focus {
+  color: #FCA311 !important;  
+  background-color: #14213D !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.list-group-item.make-center {
+  color: #FCA311 !important;
+  font-size: medium;
+}
